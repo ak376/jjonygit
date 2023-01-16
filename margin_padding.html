@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        border: 3px solid black;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        border: 5px solid pink;
+      }
+      .box1 {
+        flex: 1;
+      }
+      .box2 {
+        flex: 8;
+        display: flex;
+        flex-direction: row;
+      }
+      .box3 {
+        flex: 1;
+      }
+      .boxbox {
+        border: 1px solid black;
+      }
+      .col1 {
+        flex: 1;
+      }
+      .col2 {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+      }
+      .col3 {
+        flex: 1;
+      }
+      .roro {
+        border: 1px solid black;
+      }
+      .ro12 {
+        flex: 1;
+      }
+      .ro13 {
+        flex: 1;
+      }
+      .ro14 {
+        flex: 30;
+      }
+      .ro15 {
+        flex: 1;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">header</div>
+      <div class="box box2">
+        <div class="boxbox col1">nav</div>
+        <div class="boxbox col2">
+          <div class="roro ro12">section</div>
+          <div class="roro ro13">header</div>
+          <div class="roro ro14">Lorem bus ipsa sapiente!</div>
+          <div class="roro ro15">footer</div>
+        </div>
+        <div class="boxbox col3">aside</div>
+      </div>
+      <div class="box box3">footer</div>
+    </div>
+  </body>
+</html>
