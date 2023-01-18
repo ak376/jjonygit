@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .logi {
+        height: 20px;
+        width: 100px;
+      }
+      .g1 {
+        background-color: yellow;
+        margin-top: 50px;
+      }
+      .g2 {
+        background-color: yellow;
+        margin-top: 50px;
+      }
+      .g3 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="logi g1"><input class = "g11" type="text" placeholder="비번" /></div>
+      <div class="logi g2"><input class = "g22" type="text" placeholder="아이디" /></div>
+      <div class="logi g3"><button>회원가입하기</button></div>
+
+      <script>
+        const id = document.querySelector(".g11");
+        const pw = document.querySelector(".g22");
+        const bt = document.querySelector("button");
+
+        bt.addEventListener("click", function () {
+          if (id.value === "1" || pw.value === "") {
+            alert("회원가입안됨");
+            return;
+          }
+
+          alert("회원가입완료");
+        });
+      </script>
+    </div>
+  </body>
+</html>

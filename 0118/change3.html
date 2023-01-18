@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .front-red {
+        color: red;
+      }
+      .front-b {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hi</h1>
+    <button>빨간색으로</button>
+    <button class="rem">까만색으로</button>
+    <button class="turn1">변함</button>
+    <button class="isred">속성유무</button>
+    <button class="rere">속성dffsd유무</button>
+    <script>
+      const h1 = document.querySelector("h1");
+      const but = document.querySelector("button");
+      const rem = document.querySelector(".rem");
+      const turn1 = document.querySelector(".turn1");
+      const rred = document.querySelector(".isred");
+      const cc = document.querySelector(".rere");
+
+      but.addEventListener("click", function () {
+        h1.classList.add("front-red");
+      });
+
+      rem.addEventListener("click", function () {
+        h1.classList.remove("front-red");
+      });
+      turn1.addEventListener("click", function () {
+        h1.classList.toggle("front-red");
+      });
+      rred.addEventListener("click", function () {
+        const flage = h1.classList.contains("front-red");
+        console.log(flage);
+      });
+
+      cc.addEventListener("click", function () {
+        h1.classList.replace("front-red", "front-b");
+      });
+    </script>
+  </body>
+</html>
