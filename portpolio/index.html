@@ -11,33 +11,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>원준포폴</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="px-5 navbar navbar-dark bg-dark position-fixed w-100">
         <a class="navbar-brand" href="#">정원준</a>
 
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Main</a>
+            <a class="nav-link active" aria-current="page" href="#main-part"
+              >Main</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about-part">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">skill</a>
+            <a class="nav-link" href="#language-part">skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Stack</a>
+            <a class="nav-link" href="#stack-part">Stack</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link disabled">Closing</a>
+            <a class="nav-link disabled" href="#to-be-part">Closing</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <section id="main-part">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/main1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption h-50">
+              <h2>ssafy임베디드 정원준</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/main2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption h-50">
+              <h2>개발<br />사랑해</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/main3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption h-50">
+              <h2>중꺽마</h2>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="about-part " class="pt-5">
+      <!-- mx-auto -->
+      <div class="h1 bg-primary p-4 text-white text-center w-100">About</div>
+      <div class="card mx-auto mt-4" style="width: 18rem">
+        <img
+          src="./images/profile.jpg"
+          class="card-img-top w-75 m-auto"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title h3">정원준</h5>
+          <p class="card-text">IoT developer<br />(web+Embedded)</p>
+        </div>
+      </div>
+      <div class="mt-5 text-center">주주주주주줭원준<br />초밥 먹고싶다</div>
+      <ul class="list-group list-group-flush w-50 mx-auto">
+        <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+          <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+        </svg><span class="ms-2">010-5208-8580</span></li>
+        <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+          <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+          <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+        </svg><span class="ms-2">real980312@gmail.com</span></li>
+        <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+        </svg><span class="ms-2">광산구 장덕동 </span></li>
+        <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+        </svg><span class="ms-2">광산구 장덕동 </span></li>
+        <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+        </svg><span class="ms-2">광산구 장덕동 </span></li>
+      </ul>
+    <section id="language-part">
+      <div class="h1 bg-primary p-4 text-white text-center w-100">skill</div>
+    </section>
+    <section id="stack-part">
+      <div class="h1 bg-primary p-4 text-white text-center w-100">stack</div>
+    </section>
+    <section id="to-be-part">
+      <div class="h1 bg-primary p-4 text-white text-center w-100">Closing</div>
+    </section>
     <footer></footer>
 
     <script
