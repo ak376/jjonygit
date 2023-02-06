@@ -1,0 +1,4 @@
+const a = "HELLOWORLDWORLDHELLOOO";
+
+const g1 = a.indexOf("HELLO");
+console.log(g1);
