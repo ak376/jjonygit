@@ -43,19 +43,58 @@ console.log(student1.getAddress());
 student1.useMethod();
 
 const Lawyer ={
-  name:"",
-  age:"",
-  introduce:"",
+
   constructor(name,age,introduce){
     this.name=name;
     this.age=age;
     this.introduce=introduce;
+  },
+
+  intro(){
+    console.log(`이름 : ${this.name}`);
+    console.log(`age : ${this.age}`);
+    console.log(`inro : ${this.introduce}`);
   }
-};
+}
 const person1 = new Lawyer("우영우",24,"기러기 토마토 스위스 역삼역");
+person1.intro();
 
+class Hero {
+  constructor(hp){
+    this.hp=hp;
+  }
+  showHP(){
+    console.log("hp는 "+this.hp);
+  }
+  run(){
+    this.hp=this.hp-10;
+  }
+}
+const batman = new Hero(100);
+batman.showHP();
+batman.run();
+batman.run();
 
-const person2 =new Lawyer();
-person2.name="최수연";
-person2.age="27";
-person2.introduce="봄날의 햇살";
+class Person{
+  constructor(name,hp){
+    this.name=name;
+    this.hp=hp;
+  }
+  hello(){
+    console.log(this.name);
+  }
+}
+class Avengers extends Person{
+  constructor(hp, name,power, skill){
+    super(hp);
+    super(name);
+    this.power=power;
+    this.skill=skill;
+  }
+  information(){
+    console.log(this.name+this.hp+this.power+this.skill);
+  }
+  fly(){
+    console.log("비행중");
+  }
+}
