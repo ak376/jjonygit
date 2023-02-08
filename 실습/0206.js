@@ -1,8 +1,15 @@
-let tt='';
-for(a = 0;a<5;a++){
+function palindrome(str) {
+  let hol =0;
+if(str.length%2===0)hol=str.length/2;
+else hol=(str.length-1)/2;
 
-  tt+='*';
-    console.log(tt);
- 
-  console.log('\n');
+for(let i =0; i<hol){
+if(str[i]!=str[str.length-i]){
+  return false;
+  }i++
+}return true;
 }
+
+// 출력
+palindrome('level') => true
+// palindrome('hi') => false
